@@ -25,7 +25,7 @@
     "environment": [
       "PUID=0",
       "PGID=0",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "ports": [
       "8080:8080",
@@ -54,7 +54,7 @@
     "environment": [
       "PUID=0",
       "PGID=0",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "links": [
       "sabnzbd",
@@ -79,7 +79,7 @@
       "8081:8081"
     ],
     "environment": [
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
       "0.0.0.0:localhost"
@@ -95,7 +95,7 @@
       "./configs/couchpotato/release:/config",
       "./configs/couchpotato/release/downloads:/downloads",
       "./temp/movies/release:/completed",
-      "./media/movies/release:/movies"
+      "./media/movies:/movies"
     ],
     "links": [
       "sabnzbd",
@@ -107,7 +107,7 @@
     "environment": [
       "PUID=0",
       "PGID=0",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
       "0.0.0.0:localhost"
@@ -127,7 +127,7 @@
       "./configs/couchpotato/prerelease:/config",
       "./configs/couchpotato/prerelease/downloads:/downloads",
       "./temp/movies/prerelease:/completed",
-      "./media/movies/prerelease:/movies"
+      "./media/movies:/movies"
     ],
     "ports": [
       "5051:5050"
@@ -135,7 +135,7 @@
     "environment": [
       "PUID=0",
       "PGID=0",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
       "0.0.0.0:localhost"
@@ -159,7 +159,7 @@
       "VERSION=plexpass",
       "PGID=0",
       "PUID=0",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "restart": "always",
     "net": "host"
@@ -179,7 +179,7 @@
     "environment": [
       "PGID=0",
       "PUID=0",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "restart": "always"
   },
@@ -209,7 +209,7 @@
       "TRANSMISSION_DOWNLOAD_QUEUE_SIZE=50",
       "TRANSMISSION_DOWNLOAD_QUEUE_ENABLED=true",
       "TRANSMISSION_UPLOAD_SLOTS_PER_TORRENT=1",
-      "TZ=America/New_York"
+      "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
       "0.0.0.0:localhost"
