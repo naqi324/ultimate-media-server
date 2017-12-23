@@ -27,9 +27,6 @@
       "PGID=0",
       "TZ=America/Los_Angeles"
     ],
-    "networks": [
-      "media_server_network:ipv4_address:172.17.0.3"
-    ],
     "ports": [
       "8080:8080",
       "9090:9090"
