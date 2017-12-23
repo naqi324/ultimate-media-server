@@ -62,30 +62,6 @@
     ],
     "restart": "always"
   },
-  "sickbeard": {
-    "image": "timhaak/sickbeard",
-    "volumes_from": [
-      "shares"
-    ],
-    "volumes": [
-      "./configs/sickbeard:/config",
-      "./temp/tv:/completed",
-      "./media/tv:/tv"
-    ],
-    "links": [
-      "sabnzbd"
-    ],
-    "ports": [
-      "8081:8081"
-    ],
-    "environment": [
-      "TZ=America/Los_Angeles"
-    ],
-    "extra_hosts": [
-      "0.0.0.0:127.0.0.1"
-    ],
-    "restart": "always"
-  },
   "couchpotato": {
     "image": "linuxserver/couchpotato",
     "volumes_from": [
