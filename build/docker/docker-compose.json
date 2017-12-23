@@ -32,7 +32,7 @@
       "9090:9090"
     ],
     "extra_hosts": [
-      "0.0.0.0:localhost"
+      "0.0.0.0:127.0.0.1"
     ],
     "restart": "always"
   },
@@ -82,7 +82,7 @@
       "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
-      "0.0.0.0:localhost"
+      "0.0.0.0:127.0.0.1"
     ],
     "restart": "always"
   },
@@ -110,7 +110,7 @@
       "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
-      "0.0.0.0:localhost"
+      "0.0.0.0:127.0.0.1"
     ],
     "restart": "always"
   },
@@ -138,7 +138,7 @@
       "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
-      "0.0.0.0:localhost"
+      "0.0.0.0:127.0.0.1"
     ],
     "restart": "always"
   },
@@ -212,7 +212,7 @@
       "TZ=America/Los_Angeles"
     ],
     "extra_hosts": [
-      "0.0.0.0:localhost"
+      "0.0.0.0:127.0.0.1"
     ],
     "volumes": [
       "./configs/transmission:/config",
@@ -240,7 +240,7 @@
       "./build/docker/nginx.conf:/etc/nginx/nginx.conf:ro"
     ],
     "extra_hosts": [
-      "0.0.0.0:localhost"
+      "0.0.0.0:127.0.0.1"
     ],
     "ports": [
       "8091:8091"
